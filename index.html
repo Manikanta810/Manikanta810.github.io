@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Deisgn | Home</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id=branding>
+        <h1><span class="highlight">Web</span> Design</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">home</a></li>
+          <li><a href="About.html">about</a></li>
+          <li><a href="Services.html">services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="showcase">
+    <div class="container">
+      <h1>Affordable web Design</h1>
+      <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+    </div>
+  </section>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe to our Newsletter</h1>
+      <form>
+        <input type="email" placeholder="Enter email">
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <section id="boxes">
+    <div class="container-1">
+      <div class="box">
+        <img src="./images/logo_html.png" alt="html image">
+        <h3>Html5 Markup</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur nec ante sit amet lacinia. Nulla facilisis metus vel justo tempus vestibulum ac a justo.</p>
+      </div>
+      <div class="box">
+        <img src="./images/logo_css.png" alt="CSS3 image">
+        <h3>CSS3 Styling</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur nec ante sit amet lacinia. Nulla facilisis metus vel justo tempus vestibulum ac a justo.</p>
+      </div>
+      <div class="box">
+        <img src="./images/logo_brush.png" alt="Design image">
+        <h3>Graphic Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur nec ante sit amet lacinia. Nulla facilisis metus vel justo tempus vestibulum ac a justo.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="map" style="width:100%; height:500px;"></div>
+    <script>
+      function initMap() {
+        var uluru = { lat: 12.915325, lng: 77.753462 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru,
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX-v4XVChHbAodJyw3sWXlVOyWQ2BSPjM&callback=initMap">
+    </script>
+  </section>
+  <footer>
+    <p>Web Design, Copyright &copy; 2017</p>
+  </footer>
+
+</body>
+</html>
